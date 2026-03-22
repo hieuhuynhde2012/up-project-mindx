@@ -1,0 +1,2 @@
+.auth-card h2, .auth-side h1 { margin-top: 0; }
+#authMessage { margin-top: 14px; color: var(--muted); }

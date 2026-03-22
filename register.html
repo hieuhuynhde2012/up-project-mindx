@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng ký - EduQuiz Hub</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/auth.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main class="auth-page">
+    <div class="container auth-grid">
+      <section class="auth-side card">
+        <span class="kicker">Tạo tài khoản</span>
+        <h1>Bắt đầu hành trình tự học hiệu quả</h1>
+        <p>Tạo tài khoản để lưu bài đã làm, xem thống kê điểm số và nhận gợi ý bài tập phù hợp với năng lực.</p>
+      </section>
+      <section class="auth-card card">
+        <h2>Đăng ký</h2>
+        <form id="registerForm" class="auth-form">
+          <div class="form-group">
+            <label>Họ tên</label>
+            <input id="username" type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Mật khẩu</label>
+            <input id="password" type="password" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
+        </form>
+        <p class="auth-note">Đã có tài khoản? <a href="./login.html">Đăng nhập</a></p>
+        <div id="authMessage"></div>
+      </section>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./scripts/register.js"></script>
+</body>
+</html>

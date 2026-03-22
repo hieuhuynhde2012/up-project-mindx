@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Môn học - EduQuiz Hub</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main class="page-space">
+    <section class="container">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Danh mục bài tập</span>
+          <h1>Môn học và mức độ luyện tập</h1>
+          <p class="section-note">Chọn môn học, độ khó và số lượng câu để xem bộ bài tập trắc nghiệm phù hợp.</p>
+        </div>
+      </div>
+      <div class="toolbar toolbar-wide">
+        <select id="categorySelect"></select>
+        <select id="difficultyFilter">
+          <option value="">Tất cả độ khó</option>
+          <option value="easy">Dễ</option>
+          <option value="medium">Trung bình</option>
+          <option value="hard">Khó</option>
+        </select>
+        <select id="amountSelect">
+          <option value="5">5 câu</option>
+          <option value="10" selected>10 câu</option>
+          <option value="15">15 câu</option>
+        </select>
+        <button id="applyBtn" class="btn btn-primary">Áp dụng</button>
+      </div>
+      <div id="categoryLoading"></div>
+      <div id="categoryResults" class="quiz-grid"></div>
+      <div id="categoryEmpty"></div>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./scripts/categories.js"></script>
+</body>
+</html>

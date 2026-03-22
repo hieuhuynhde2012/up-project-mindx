@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduQuiz Hub - Học tập chủ động mỗi ngày</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/home.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main class="page-space">
+    <section class="container hero">
+      <article class="hero-main card">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="kicker">Nền tảng học tập trắc nghiệm</span>
+          <h1 id="heroTitle" class="hero-title">Tìm bài tập, làm bài và nhận gợi ý học tập thông minh</h1>
+          <p id="heroDescription" class="hero-desc">
+            Học sinh có thể tìm kiếm bài tập trắc nghiệm, làm bài trực tiếp từ API miễn phí, xem đáp án ngay và dùng chat box để nhận gợi ý bài phù hợp.
+          </p>
+          <div class="hero-actions">
+            <a href="./search.html" class="btn btn-primary">Tìm bài tập</a>
+            <a href="./categories.html" class="btn btn-secondary">Xem môn học</a>
+          </div>
+        </div>
+        <div class="hero-preview hero-stats">
+          <div class="mini-card">
+            <strong id="liveQuestionCount">100+</strong>
+            <span>Câu hỏi mẫu</span>
+          </div>
+          <div class="mini-card">
+            <strong>Miễn phí</strong>
+            <span>Dữ liệu từ API</span>
+          </div>
+          <div class="mini-card">
+            <strong>Chat box</strong>
+            <span>Gợi ý bài tập</span>
+          </div>
+        </div>
+      </article>
+      <aside class="hero-side card">
+        <article class="side-item">
+          <span class="tag">Tìm kiếm</span>
+          <h3>Tìm theo từ khóa</h3>
+          <p>Tìm nhanh bài tập theo câu hỏi, chủ đề, độ khó và số lượng câu.</p>
+        </article>
+        <article class="side-item">
+          <span class="tag">Làm bài</span>
+          <h3>Chấm điểm tức thì</h3>
+          <p>Làm trắc nghiệm trực tiếp trên web, nộp bài và xem đáp án ngay.</p>
+        </article>
+        <article class="side-item">
+          <span class="tag">Hỗ trợ học tập</span>
+          <h3>Chat box gợi ý bài tập</h3>
+          <p>Nhập mục tiêu học tập để nhận đề xuất bài tập phù hợp theo môn và độ khó.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="container home-row">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Bài tập nổi bật</span>
+          <h2>Gợi ý luyện tập hôm nay</h2>
+        </div>
+        <a href="./search.html" class="text-link">Mở trang tìm kiếm</a>
+      </div>
+      <div id="trendingLoading"></div>
+      <div id="trendingList" class="quiz-grid"></div>
+    </section>
+
+    <section class="container home-row two-col">
+      <article class="card intro-card">
+        <span class="kicker">Cách hoạt động</span>
+        <h2>3 bước để học hiệu quả</h2>
+        <ol class="feature-list">
+          <li>Chọn môn học hoặc nhập từ khóa bài tập.</li>
+          <li>Làm bài trắc nghiệm trực tiếp trên trang luyện tập.</li>
+          <li>Dùng chat box để nhận thêm đề xuất bài tập phù hợp.</li>
+        </ol>
+      </article>
+      <article class="card intro-card">
+        <span class="kicker">Dành cho học sinh</span>
+        <h2>Tự học linh hoạt mọi lúc</h2>
+        <p class="muted">Có thể dùng trên máy tính hoặc điện thoại, phù hợp để ôn tập nhanh, kiểm tra kiến thức nền và luyện trước khi thi.</p>
+      </article>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./scripts/home.js"></script>
+</body>
+</html>

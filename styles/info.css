@@ -1,0 +1,3 @@
+.info-main, .info-side { padding: 24px; }
+.summary-text { color: var(--muted); line-height: 1.7; }
+.recommend-grid { display: grid; gap: 12px; }

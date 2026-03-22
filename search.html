@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tìm kiếm bài tập - EduQuiz Hub</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/search.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main class="page-space">
+    <section class="container">
+      <div class="search-head">
+        <span class="kicker">Tìm kiếm bài tập</span>
+        <h1>Tìm bộ câu hỏi trắc nghiệm phù hợp</h1>
+        <p>Tìm theo từ khóa câu hỏi hoặc lọc theo môn học, độ khó và số lượng câu.</p>
+      </div>
+      <div class="toolbar search-toolbar">
+        <input id="searchInput" type="text" placeholder="Ví dụ: history, science, capital, computer..." autocomplete="off" />
+        <select id="subjectSelect"></select>
+        <select id="sortSelect">
+          <option value="default">Sắp xếp mặc định</option>
+          <option value="easyFirst">Độ khó: dễ trước</option>
+          <option value="hardFirst">Độ khó: khó trước</option>
+          <option value="az">Chủ đề A-Z</option>
+        </select>
+        <button id="searchBtn" class="btn btn-primary">Tìm kiếm</button>
+      </div>
+      <div id="searchLoading"></div>
+      <div id="searchResults" class="quiz-grid"></div>
+      <div id="searchEmpty"></div>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./scripts/search.js"></script>
+</body>
+</html>
